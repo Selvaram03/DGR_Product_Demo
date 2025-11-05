@@ -6,7 +6,7 @@ from datetime import datetime, date
 
 # --- App-level settings ---
 # Put MONGO_URI in .streamlit/secrets.toml
-MONGO_URI = "mongodb+srv://selvaram58_db_user:cFhijYBal60CGpAi@dgr-demo.dh1kxon.mongodb.net/"
+MONGO_URI = st.secrets["MONGO_URI"]
 DATABASE_NAME = "scada_db"  # per your instruction
 
 # Map customers -> Mongo collections (edit as needed or move to secrets)
